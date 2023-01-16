@@ -60,6 +60,11 @@ userInputText.addEventListener("keydown", (event) => {
             </div>
         </div>`;
     userInputText.value = "";
-    messages.scrollIntoView({block: "end", inline: "end", behavior: "smooth"})
+    messages.scrollIntoView({
+      block: "end",
+      inline: "end",
+      behavior: "smooth",
+    });
+    sendMessegeBot(botMessages);
   }
 });
